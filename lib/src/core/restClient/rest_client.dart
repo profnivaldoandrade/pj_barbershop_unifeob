@@ -5,7 +5,7 @@ import 'package:pj_barbershop_unifeob/src/core/restClient/interceptores/auth_int
 final class RestClient extends DioForNative {
   RestClient()
       : super(BaseOptions(
-            baseUrl: "http://44.204.31.114:8686",
+            baseUrl: "http://54.161.137.14:8686",
             connectTimeout: const Duration(seconds: 10),
             receiveTimeout: const Duration(seconds: 60))) {
     interceptors.addAll([
