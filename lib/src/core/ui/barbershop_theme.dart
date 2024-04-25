@@ -4,6 +4,17 @@ import 'package:pj_barbershop_unifeob/src/core/ui/constants.dart';
 sealed class BarbershopTheme {
   static ThemeData themeData = ThemeData(
     useMaterial3: true,
+    appBarTheme: const AppBarTheme(
+      centerTitle: true,
+      iconTheme: IconThemeData(color: ColorsConstants.brow),
+      backgroundColor: Colors.white,
+      titleTextStyle: TextStyle(
+        fontWeight: FontWeight.w500,
+        fontSize: 18,
+        color: Colors.black,
+        fontFamily: FontsConstants.fontFamily
+      ),
+    ),
     inputDecorationTheme: const InputDecorationTheme(
       filled: true,
       fillColor: Colors.white,
