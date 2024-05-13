@@ -5,6 +5,7 @@ import 'package:pj_barbershop_unifeob/src/core/ui/barbershop_theme.dart';
 import 'package:pj_barbershop_unifeob/src/core/ui/widgets/barbarshop_loader.dart';
 import 'package:pj_barbershop_unifeob/src/features/auth/login/login_page.dart';
 import 'package:pj_barbershop_unifeob/src/features/auth/register/user_register_page.dart';
+import 'package:pj_barbershop_unifeob/src/features/home/adm/home_adm_page.dart';
 import 'package:pj_barbershop_unifeob/src/features/splash/splash_page.dart';
 
 class BarberShopApp extends StatelessWidget {
@@ -26,7 +27,7 @@ class BarberShopApp extends StatelessWidget {
             '/auth/login':(_) => const LoginPage(),
             '/auth/register/user': (_) => const UserRegisterPage(),
             '/auth/register/barbershop':(_) => const Text('BarberShop'), 
-            '/home/adm':(_) => const Text('ADM'), 
+            '/home/adm':(_) => const HomeAdmPage(), 
             '/home/employee':(_) => const Text('Employee'),  
           },
         );

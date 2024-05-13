@@ -9,11 +9,10 @@ sealed class BarbershopTheme {
       iconTheme: IconThemeData(color: ColorsConstants.brow),
       backgroundColor: Colors.white,
       titleTextStyle: TextStyle(
-        fontWeight: FontWeight.w500,
-        fontSize: 18,
-        color: Colors.black,
-        fontFamily: FontsConstants.fontFamily
-      ),
+          fontWeight: FontWeight.w500,
+          fontSize: 18,
+          color: Colors.black,
+          fontFamily: FontsConstants.fontFamily),
     ),
     inputDecorationTheme: const InputDecorationTheme(
       filled: true,
@@ -30,6 +29,16 @@ sealed class BarbershopTheme {
       style: ElevatedButton.styleFrom(
         backgroundColor: ColorsConstants.brow,
         foregroundColor: Colors.white,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        side: const BorderSide(
+          color: ColorsConstants.brow,
+          width: 1
+        ),
+        foregroundColor: ColorsConstants.brow,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       ),
     ),
